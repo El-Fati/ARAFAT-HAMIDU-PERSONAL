@@ -1,0 +1,49 @@
+/* Fullscreen background video styling */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire screen */
+    z-index: -1; /* Sends the video behind other elements */
+}
+
+body {
+    margin: 0; /* Removes any default margin */
+    font-family: Arial, sans-serif; /* Optional */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+    z-index: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f0a500;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: relative; /* Ensure footer stays above the video */
+}
+/* Add this to your CSS file (style.css) or inside a <style> tag in your HTML */
+
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1); /* Zoom in effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+/* Style for container to enhance text visibility */
+.container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
